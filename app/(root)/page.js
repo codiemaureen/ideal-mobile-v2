@@ -1,6 +1,8 @@
+import Header from "@/components/shared/header";
+
 const HomePage = () => {
   return ( <>
-    Ideal Mobile Detailing
+    <Header />
   </> );
 }
 
