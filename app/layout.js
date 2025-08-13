@@ -1,9 +1,8 @@
-import { Inter } from "next/font/google";
-import '@/assets/styles/globals.css';
-import { ThemeProvider } from 'next-themes';
+// import { Inter } from "next/font/google";
+import '@/assets/styles/globals.css'
 import { APP_NAME, APP_DESCRIPTION, SERVER_URL } from "@/lib/constants";
 
-const inter = Inter({ subsets: ['latin']});
+// const inter = Inter({ subsets: ['latin']});
 
 export const metadata = {
   title: `${APP_NAME}`,
@@ -11,22 +10,11 @@ export const metadata = {
   metadataBase: new URL(`${SERVER_URL}`)
 };
 
-export default function RootLayout(
-  children,
-) {
+
+export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${inter.className} antialiased`}
-      >
-        <ThemeProvider 
-          attribute='class'
-          defaultTheme='light'
-          enableSystem
-          disableTransitionOnChange>
-          {children}
-        </ThemeProvider>
-      </body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }
