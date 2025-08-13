@@ -5,11 +5,11 @@ import MenuDrawer from "./menu-drawer";
 
 const Header = () => {
   return ( 
-      <header className='w-full border-b bg-amber-500'>
+      <header className='w-full border-b bg-amber-500 '>
         <div className="wrapper flex-between text-3xl">
           <div className="flex-start">
             <MenuDrawer />
-            <span className="hidden lg:block font-bold text-2xl ml-3">
+            <span className="hidden lg:block font-bold text-3xl ml-3 text-white">
               {APP_NAME}
             </span>
           </div>
