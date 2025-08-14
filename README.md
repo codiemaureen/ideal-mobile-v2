@@ -65,6 +65,9 @@ npm install
 
 # Run the dev server
 npm run dev
+
+# Create new prisma database migration
+npx prisma migrate dev --name "mirgration-name"
 ```
 
 ---
