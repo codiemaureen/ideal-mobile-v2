@@ -13,3 +13,12 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Service {
+  id         String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name       String
+  slug       String   @unique(map: "service_slug_idx")
+  images     String[]
+  decription String
+  price      Decimal  @default(0) @db.Decimal(12, 2)
+}
