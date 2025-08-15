@@ -1,9 +1,9 @@
 import Header from "@/components/shared/header";
 import ServicesList from "@/components/shared/services/services-list";
-import { getAllService } from "@/lib/action/services.actions";
+import { getAllServices } from "@/lib/action/services.actions";
 
 const HomePage = async () => {
-  const services = await getAllService();
+  const services = await getAllServices();
   return ( 
     <div>
       <ServicesList services={services} limit={2}/>
