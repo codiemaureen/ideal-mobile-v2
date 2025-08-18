@@ -1,4 +1,3 @@
-import Header from "@/components/shared/header";
 import ServicesList from "@/components/shared/services/services-list";
 import { getAllServices } from "@/lib/action/services.actions";
 
