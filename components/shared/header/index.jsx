@@ -11,7 +11,7 @@ const Header = () => {
         <div className="flex-start group">
           <MenuDrawer />
           <span className="hidden lg:block font-bold text-3xl ml-3 text-white">
-            {APP_NAME}
+            {APP_NAME} 🚧 Under Construction v2.0 in progress 🚧
           </span>
         </div>
         <Menu />
