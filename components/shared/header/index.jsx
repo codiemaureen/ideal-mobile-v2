@@ -1,5 +1,6 @@
 import { APP_NAME } from "@/lib/constants";
 import MenuDrawer from "./menu-drawer";
+import Menu from "./menu";
 
 
 
@@ -13,6 +14,7 @@ const Header = () => {
             {APP_NAME}
           </span>
         </div>
+        <Menu />
       </div>
     </header>
   );
