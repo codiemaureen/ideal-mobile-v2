@@ -5,8 +5,9 @@ export const prisma = new PrismaClient().$extends({
   result: {
     service: {
       price: {
+        needs: { price: true },
         compute(service) {
-          return service.price.toString()
+          return String(service.price); // or Number(service.price)
         },
       },
     },
