@@ -6,7 +6,7 @@ import CredentialsSignInForm from "./credentials-signin-form";
 
 const SignInPage = () => {
 return ( 
-    <div className="w-full max-w-md mx-auto">
+    <div className="w-full max-w-md mx-auto max-h-md my-5">
     <Card>
       <CardHeader className="space-y-4">
       <Link href="/" className='flex-center'>
