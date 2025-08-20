@@ -87,3 +87,8 @@ npx shadcn@latest add dropdown-menu
 - [ ] Add Admin Dashboard
 - [ ] Add Customer Dashboard
 - [ ] Deploy to Vercel
+
+## 📝To Do
+
+- [ ] Update Left Drawer
+- [ ] Add Google Map and Reviews
