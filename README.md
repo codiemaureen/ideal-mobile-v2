@@ -68,6 +68,10 @@ npm run dev
 
 # Create new prisma database migration
 npx prisma migrate dev --name "mirgration-name"
+
+#Add Shadcn components
+npx shadcn@latest add dropdown-menu
+
 ```
 
 ---
