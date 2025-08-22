@@ -41,8 +41,8 @@ const MenuDrawer = async () => {
                 {/* always show sublinks */}
                 {service.subtitles?.length > 0 && (
                   <div className="pl-4 space-y-1">
-                    {service.subtitles.map((st) => (
-                      <DrawerClose asChild key={st.link}>
+                    {service.subtitles.map((st, i) => (
+                      <DrawerClose asChild key={i}>
                         <Button
                           variant="ghost"
                           size="sm"
