@@ -10,12 +10,8 @@ const MenuDrawer = async () => {
  
  const services = await getAllMenuDrawerOptions();
 
- services.map((s,i) => (
-  console.log(s.title)
- ))
-
   return (
- <Drawer direction="left">
+   <Drawer direction="left">
       <DrawerTrigger asChild>
         <Button variant="outline">
           <MenuIcon />
@@ -64,7 +60,7 @@ const MenuDrawer = async () => {
           </div>
         </nav>
       </DrawerContent>
-    </Drawer>
+   </Drawer>
   );
 }
  
