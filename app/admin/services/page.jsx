@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/table";
 import { deleteService, getAllServices } from "@/lib/action/services.actions";
 import DeleteDialog from "@/components/ui/delete-dialog";
+import { formatId } from "@/lib/utils";
 
 const AdminServices = async () => {
   const data = await getAllServices();
@@ -42,7 +43,7 @@ const AdminServices = async () => {
         <TableBody>
           {services.map((service) => (
             <TableRow key={service.id}>
-              <TableCell>{service.id}</TableCell>
+              <TableCell>{formatId(service.id)}</TableCell>
               <TableCell>{service.name}</TableCell>
               <TableCell className="text-right">
                 {typeof service.price === "number"
