@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import MainNav from "./main-nav";
 import { SessionProvider } from "next-auth/react";
+import BackButton from "@/components/shared/back-button";
 
 
 export default function UserLayout({
@@ -22,6 +23,12 @@ export default function UserLayout({
           </div>
           </div>
         </div>
+        <div className="flex-1 container mx-auto p-8 pt-6 space-y-4">
+          <div className="flex justify-end">
+            <BackButton className="h-8 px-2" />
+          </div>
+        </div>
+          
         <div className="flex-1 space-y-4 p-8 pt-6 container mx-auto">
           <SessionProvider>
             {children}
