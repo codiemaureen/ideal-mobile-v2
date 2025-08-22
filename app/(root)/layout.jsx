@@ -1,3 +1,4 @@
+import Footer from "@/components/shared/footer";
 import Header from "@/components/shared/header";
 
 export const metadata = {
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <main className="flex-1 wrapper">
         {children}
       </main>
+      <Footer />
     </div>
   );
 }
