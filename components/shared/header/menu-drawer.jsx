@@ -49,7 +49,7 @@ const MenuDrawer = async () => {
                           className="w-full justify-start"
                           asChild
                         >
-                          <Link href={st.link}>{st.title}</Link>
+                          <Link href={st.link} target="_blank">{st.title}</Link>
                         </Button>
                       </DrawerClose>
                     ))}
