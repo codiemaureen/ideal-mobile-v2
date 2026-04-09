@@ -14,7 +14,7 @@ const Header = () => {
           <Link href='/'>
           
           <span className="hidden lg:block font-bold text-3xl ml-3 text-white text-center">
-            🚧 Under Construction 🚧<br/>{APP_NAME} V2.0 in progress 
+            {APP_NAME} 
           </span></Link>
         </div>
         <Menu />
