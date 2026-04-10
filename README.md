@@ -56,7 +56,7 @@ project/
 
 ## 🚀 Getting Started
 
-```bash
+````bash
 # Clone the repo
 git clone https://github.com/yourusername/your-repo-name.git
 
@@ -69,10 +69,17 @@ npm run dev
 # Create new prisma database migration
 npx prisma migrate dev --name "mirgration-name"
 
+## Seed the Database
+
+Run the following command to populate the database with sample data:
+
+```bash
+npx prisma db seed
+
 #Add Shadcn components
 npx shadcn@latest add dropdown-menu
 
-```
+````
 
 ---
 

@@ -11,6 +11,7 @@
     "build": "prisma generate && next build",
     "clean": "rimraf .next"
   },
+  "prisma": { "seed": "node db/seed.js" },
   "dependencies": {
     "@auth/prisma-adapter": "^2.10.0",
     "@neondatabase/serverless": "github:neondatabase/serverless",
