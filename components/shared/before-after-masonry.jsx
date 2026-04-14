@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function MasonryHoverSwap({ before, after, alt, title, description, tag }) {
   const [showBefore, setShowBefore] = useState(false);
@@ -82,9 +83,11 @@ export default function BeforeAfterMasonry({ pairs }) {
   return (
     <section className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
       <div className="mb-8 text-center">
-        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#D4AF37]">
+          <Link 
+        href='/gallery'
+        className="mb-3 text-md font-semibold uppercase tracking-[0.22em] text-[#D4AF37]" ><p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#D4AF37]">
           More Transformations
-        </p>
+        </p></Link>
         <h2 className="text-3xl font-bold tracking-tight text-black/70 uppercase sm:text-4xl">
           Browse recent before and after details
         </h2>
