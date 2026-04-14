@@ -1,4 +1,5 @@
 import BeforeAfterCarousel from "@/components/shared/before-after-img-carousel";
+import BeforeAfterMasonry from "@/components/shared/before-after-masonry";
 import Header from "@/components/shared/header";
 import { getPairedBeforeAfterImages } from "@/lib/getPairedBeforeAfterImages";
 
@@ -8,7 +9,7 @@ const Gallery = async() => {
   return ( 
     <>
       <Header />
-      <BeforeAfterCarousel pairs={pairs} />
+      <BeforeAfterMasonry pairs={pairs} />
     </>
   );
 }
