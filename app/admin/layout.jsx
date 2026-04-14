@@ -15,7 +15,7 @@ export default function UserLayout({
         <div className="border-b container mx-auto">
           <div className="flex items-center h-16 px-4">
           <Link href='/' className="w-22">
-            <Image src='/images/logo.jpg' className="rounded-full" width={48} height={48} alt={APP_NAME}/>
+            <Image src='/images/logo.png' className="rounded-full" width={48} height={48} alt={APP_NAME}/>
           </Link>
           <MainNav className="mx-6" />
           <div className="ml-auto items-center flex space-x-4">

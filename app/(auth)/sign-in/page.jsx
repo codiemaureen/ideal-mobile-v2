@@ -12,7 +12,7 @@ return (
       <Link href="/" className='flex-center'>
         <Image
         className="rounded-full" 
-        src='/images/logo.jpg' 
+        src='/images/logo.png' 
         width={100} 
         height={100} 
         alt={`${APP_NAME} logo`}
