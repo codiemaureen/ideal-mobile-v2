@@ -10,7 +10,7 @@ const Header = () => {
     <header className='w-full border-b bg-amber-500'>
       <div className="wrapper flex-between">
         <div className="flex-start group">
-          <MenuDrawer />
+          {/* <MenuDrawer /> */}
           <Link href='/'>
           
           <span className="hidden lg:block font-bold text-3xl ml-3 text-white text-center">
