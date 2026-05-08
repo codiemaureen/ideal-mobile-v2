@@ -40,7 +40,7 @@ export default function Hero() {
         </p>
 
         <div className={styles.actions}>
-          <Link href="/booking" className={styles.primaryBtn}>
+          <Link href="https://calendly.com/idealmobiledetailingmi/30min" className={styles.primaryBtn}>
             <CalendarDays size={19} />
             Book Appointment
           </Link>
