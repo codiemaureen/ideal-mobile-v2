@@ -1,7 +1,6 @@
 import Footer from "@/components/shared/footer";
 import Header from "@/components/shared/header";
 import Hero from "@/components/shared/hero/hero";
-import Head from "next/head";
 
 export const metadata = {
   title: "Ideal Mobile Detailing",
