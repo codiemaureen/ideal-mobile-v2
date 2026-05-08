@@ -93,7 +93,7 @@ export default function AboutSection() {
         </div>
 
         
-        <div className="mt-20 overflow-hidden rounded-[1.75rem] bg-[#0B132B] p-8 text-white shadow-2xl md:p-10">
+        <div className="mt-20 overflow-hidden rounded-[1.75rem] bg-black p-8 text-white shadow-2xl md:p-10">
           <div className="grid items-center gap-8 md:grid-cols-[1fr_auto]">
             <div>
               <p className="mb-2 text-sm font-bold uppercase tracking-[0.2em] text-[#C9A646]">
