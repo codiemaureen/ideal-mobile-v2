@@ -21,7 +21,7 @@ const aboutPoints = [
 
 export default function AboutSection() {
   return (
-    <section className="relative overflow-hidden bg-white px-6 py-24 text-[#171717]" id="#about">
+    <section className="relative overflow-hidden bg-white px-6 py-24 text-[#171717]">
       <div className="mx-auto max-w-7xl">
 
         <div className="mx-auto mb-16 max-w-4xl text-center">
@@ -33,7 +33,7 @@ export default function AboutSection() {
             <span className="h-px w-28 bg-[#C9A646]" />
           </div>
 
-          <p className="mb-4 text-sm font-bold uppercase tracking-[0.25em] text-[#C9A646]">
+          <p className="mb-4 text-sm font-bold uppercase tracking-[0.25em] text-[#C9A646]" id="about">
             About Ideal Mobile Detailing
           </p>
 
