@@ -1,3 +1,4 @@
+import AboutSection from "@/components/shared/about";
 import BeforeAfterMasonry from "@/components/shared/before-after-masonry";
 import ImageCarousel from "@/components/shared/image-carousel";
 import ServicesList from "@/components/shared/services/services-list";
@@ -13,6 +14,7 @@ const HomePage = async () => {
     <div>
       <ImageCarousel images={images} />
       <ServicesList services={services} limit={2}/>
+      <AboutSection />
       <BeforeAfterMasonry pairs={pairs} />
     </div> 
   );
