@@ -6,7 +6,7 @@ import CalendlyPopup from "../calendy-popup-button";
 
 const ServiceCard = ({ service }) => {
   return (
-    <Card className="flex h-full flex-col">
+    <Card className="flex h-full flex-col" id="services">
       <CardHeader className="flex justify-center">
         <Link href={`/services/${service.slug}`}>
           <h2 className="py-5 text-center text-2xl font-bold">{service.name}</h2>

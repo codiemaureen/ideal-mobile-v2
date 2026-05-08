@@ -1,0 +1,253 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  width: 100%;
+  overflow: hidden;
+  background: #030303;
+  color: white;
+}
+
+.heroImage {
+ object-fit: cover;
+ object-position: center right;
+ z-index: 0;
+}
+
+.overlay {
+ position: absolute;
+ inset: 0;
+ z-index: 1;
+ background:
+  linear-gradient(90deg,
+   rgba(0, 0, 0, 0.96) 0%,
+   rgba(0, 0, 0, 0.82) 34%,
+   rgba(0, 0, 0, 0.42) 62%,
+   rgba(0, 0, 0, 0.25) 100%),
+  linear-gradient(180deg,
+   rgba(0, 0, 0, 0.55) 0%,
+   rgba(0, 0, 0, 0.15) 45%,
+   rgba(0, 0, 0, 0.9) 100%);
+}
+
+.content {
+ position: relative;
+ z-index: 2;
+ width: min(92%, 1420px);
+ margin: 0 auto;
+ padding-top: clamp(9rem, 14vw, 13rem);
+ padding-bottom: clamp(4rem, 8vw, 8rem);
+}
+
+.eyebrow {
+ display: flex;
+ align-items: center;
+ gap: 0.9rem;
+ margin-bottom: 1.6rem;
+ color: #d6a73f;
+ font-size: clamp(0.85rem, 1.4vw, 1.1rem);
+ font-weight: 700;
+ letter-spacing: 0.08em;
+ text-transform: uppercase;
+}
+
+.eyebrow span {
+ width: 48px;
+ height: 2px;
+ background: #d6a73f;
+}
+
+.content h1 {
+ max-width: 760px;
+ margin: 0;
+ font-size: clamp(3.1rem, 7vw, 6.7rem);
+ line-height: 0.95;
+ font-weight: 900;
+ letter-spacing: -0.04em;
+ text-transform: uppercase;
+}
+
+.content h1 strong {
+ color: #d6a73f;
+}
+
+.subtext {
+ max-width: 610px;
+ margin: 1.7rem 0 2.2rem;
+ color: rgba(255, 255, 255, 0.88);
+ font-size: clamp(1.05rem, 1.5vw, 1.35rem);
+ line-height: 1.65;
+}
+
+.actions {
+ display: flex;
+ gap: 1.2rem;
+ flex-wrap: wrap;
+ margin-bottom: 2rem;
+}
+
+.primaryBtn,
+.secondaryBtn {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ gap: 0.7rem;
+ min-height: 58px;
+ padding: 0 2rem;
+ border-radius: 6px;
+ font-weight: 800;
+ text-transform: uppercase;
+ text-decoration: none;
+ transition: 0.25s ease;
+}
+
+.primaryBtn {
+ color: #080808;
+ background: linear-gradient(135deg, #f2c86b, #bd822b);
+ box-shadow: 0 14px 30px rgba(214, 167, 63, 0.24);
+}
+
+.primaryBtn:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 18px 40px rgba(214, 167, 63, 0.34);
+}
+
+.secondaryBtn {
+ color: white;
+ border: 1px solid #d6a73f;
+ background: rgba(0, 0, 0, 0.22);
+}
+
+.secondaryBtn:hover {
+ background: rgba(214, 167, 63, 0.12);
+ transform: translateY(-2px);
+}
+
+.rating {
+ display: flex;
+ align-items: center;
+ gap: 0.8rem;
+ color: white;
+ font-size: 1.05rem;
+ margin-bottom: 4.2rem;
+}
+
+.google {
+ width: 36px;
+ height: 36px;
+ display: grid;
+ place-items: center;
+ border-radius: 50%;
+ background: white;
+ color: #4285f4;
+ font-weight: 900;
+ font-size: 1.4rem;
+}
+
+.stars {
+ color: #ffc233;
+ letter-spacing: 0.12em;
+}
+
+.trustBar {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ width: 100%;
+ padding: 1.7rem 2rem;
+ border-radius: 20px;
+ background: rgba(10, 10, 10, 0.78);
+ border: 1px solid rgba(255, 255, 255, 0.13);
+ backdrop-filter: blur(18px);
+ box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+}
+
+.trustItem {
+ display: flex;
+ align-items: center;
+ gap: 1.2rem;
+ padding: 0 1.4rem;
+ border-right: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.trustItem:last-child {
+ border-right: none;
+}
+
+.trustItem svg {
+ width: 42px;
+ height: 42px;
+ color: #d6a73f;
+ flex-shrink: 0;
+}
+
+.trustItem h3 {
+ margin: 0 0 0.25rem;
+ font-size: 1rem;
+ color: white;
+ text-transform: uppercase;
+ letter-spacing: 0.04em;
+}
+
+.trustItem p {
+ margin: 0;
+ color: rgba(255, 255, 255, 0.72);
+ font-size: 0.95rem;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+ .hero {
+  min-height: auto;
+ }
+
+ .heroImage {
+  object-position: 68% center;
+ }
+
+ .overlay {
+  background:
+   linear-gradient(180deg,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.78) 45%,
+    rgba(0, 0, 0, 0.96) 100%);
+ }
+
+ .content {
+  padding-top: 7.5rem;
+  padding-bottom: 2.5rem;
+ }
+
+ .content h1 {
+  font-size: clamp(2.7rem, 13vw, 4.3rem);
+ }
+
+ .actions {
+  flex-direction: column;
+ }
+
+ .primaryBtn,
+ .secondaryBtn {
+  width: 100%;
+ }
+
+ .rating {
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+ }
+
+ .trustBar {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1.2rem;
+ }
+
+ .trustItem {
+  border-right: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0 0 1rem;
+ }
+
+ .trustItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+ }
+}

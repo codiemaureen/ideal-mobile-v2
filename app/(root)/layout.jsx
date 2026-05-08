@@ -1,5 +1,7 @@
 import Footer from "@/components/shared/footer";
 import Header from "@/components/shared/header";
+import Hero from "@/components/shared/hero/hero";
+import Head from "next/head";
 
 export const metadata = {
   title: "Ideal Mobile Detailing",
@@ -8,8 +10,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <div className="flex h-screen flex-col">
+    <div className="flex min-h-screen flex-col">
       <Header />
+      <Hero />
       <main className="flex-1 wrapper">
         {children}
       </main>
