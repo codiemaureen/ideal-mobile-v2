@@ -1,5 +1,6 @@
 import AboutSection from "@/components/shared/about";
 import BeforeAfterMasonry from "@/components/shared/before-after-masonry";
+import ContactSection from "@/components/shared/contact";
 import ImageCarousel from "@/components/shared/image-carousel";
 import ServicesList from "@/components/shared/services/services-list";
 import { getAllServices } from "@/lib/action/services.actions";
@@ -16,6 +17,7 @@ const HomePage = async () => {
       <ServicesList services={services} limit={2}/>
       <AboutSection />
       <BeforeAfterMasonry pairs={pairs} />
+      <ContactSection />
     </div> 
   );
 }
