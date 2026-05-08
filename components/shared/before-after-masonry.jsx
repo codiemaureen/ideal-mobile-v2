@@ -27,7 +27,7 @@ function MasonryHoverSwap({ before, after, alt, title, description, tag }) {
       onMouseLeave={() => setShowBefore(false)}
       onTouchStart={onTouchStart}
     >
-      <div className="relative aspect-[4/5] w-full overflow-hidden bg-black">
+      <div className="relative aspect-4/5 w-full overflow-hidden bg-black">
         <Image
           src={showBefore ? before : after}
           alt={alt}
@@ -36,7 +36,7 @@ function MasonryHoverSwap({ before, after, alt, title, description, tag }) {
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent" />
 
         <div className="absolute left-4 top-4">
           {tag && (
@@ -59,7 +59,7 @@ function MasonryHoverSwap({ before, after, alt, title, description, tag }) {
           </div>
 
           <div className="rounded-full bg-black/55 px-3 py-1 text-[11px] text-white/90">
-            Tap to compare
+            Double Tap to compare
           </div>
         </div>
       </div>
