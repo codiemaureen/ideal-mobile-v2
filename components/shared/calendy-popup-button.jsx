@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
 
 const PopupButton = dynamic(
   () => import("react-calendly").then((mod) => mod.PopupButton),
@@ -8,10 +9,18 @@ const PopupButton = dynamic(
 );
 
 const CalendlyPopup = () => {
+  const [rootElement, setRootElement] = useState(null);
+
+  useEffect(() => {
+    setRootElement(document.body);
+  }, []);
+
+  if (!rootElement) return null;
+
   return (
     <PopupButton
       url="https://calendly.com/idealmobiledetailingmi/30min"
-      rootElement={document.body}
+      rootElement={rootElement}
       text="Book Now"
       className="
         w-full
