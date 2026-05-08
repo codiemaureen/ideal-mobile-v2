@@ -66,7 +66,7 @@ export default function Header() {
           ))}
 
           <Link
-            href="/booking"
+            href="https://calendly.com/idealmobiledetailingmi/30min"
             className={styles.mobileCta}
             onClick={() => setIsOpen(false)}
           >
