@@ -1,4 +1,5 @@
 import '@/assets/styles/globals.css'
+import Footer from '@/components/shared/footer';
 import Header from '@/components/shared/header';
 import { APP_NAME, APP_DESCRIPTION, SERVER_URL } from "@/lib/constants";
 
@@ -11,10 +12,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className="pt-40">
-        {children}
-      </body>
-    </html>
+    <>
+      <div className="flex min-h-screen flex-col">
+        <Header />
+        <main className="pt-40 flex-1 wrapper">
+          {children}
+        </main>
+        <Footer />
+      </div>
+  </>
   );
 }
