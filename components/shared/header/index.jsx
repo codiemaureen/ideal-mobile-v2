@@ -40,7 +40,7 @@ export default function Header() {
         ))}
       </nav>
 
-      <Link href="/booking" className={styles.cta}>
+      <Link href="https://calendly.com/idealmobiledetailingmi/30min" className={styles.cta}>
         <CalendarDays size={18} />
         Book Appointment
       </Link>
