@@ -9,7 +9,7 @@ const ServiceCard = ({ service }) => {
     <Card className="flex h-full flex-col" id="services">
       <CardHeader className="flex justify-center">
         <Link href={`/services/${service.slug}`}>
-          <h2 className="py-5 text-center text-2xl font-bold">{service.name}</h2>
+          <h2 className="py-5 text-left text-2xl font-bold">{service.name}</h2> <p className="py-3 text-right text-1xl font-bold "> Services Starting at ${service.price} </p>
           <Image
             src={service.images[0]}
             alt={service.slug}
